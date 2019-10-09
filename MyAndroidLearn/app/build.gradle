@@ -134,11 +134,14 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
+    //引用module
+    implementation project(":basemodule")
     //通过全局配置依赖库
     implementation rootProject.ext.androidDependencies.appcompat
     implementation rootProject.ext.androidDependencies.constraintlayout
     implementation rootProject.ext.androidDependencies.junit
     implementation rootProject.ext.androidDependencies.androidxrunner
     implementation rootProject.ext.androidDependencies.androidxespressocore
+
 
 }

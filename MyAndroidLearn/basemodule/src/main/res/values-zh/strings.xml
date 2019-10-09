@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">安卓笔记</string>
+    <string name="BaseModule">BaseModule</string>
+    <string name="about_text">关于安卓学习笔记</string>
+</resources>

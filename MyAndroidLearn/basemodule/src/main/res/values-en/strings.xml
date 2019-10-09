@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Android NoteBook</string>
+    <string name="BaseModule">BaseModule</string>
+    <string name="about_text">About Android learn note book</string>
+</resources>
