@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="main_tab_array">
+        <item>首页</item>
+        <item>多屏互动</item>
+        <item>远程互动</item>
+        <item>课程录制</item>
+        <item>环境控制</item>
+    </string-array>
+
+    <string-array name="shop_tab_array">
+        <item>待确认</item>
+        <item>待配送</item>
+        <!-- item>自己送</item -->
+        <item>配送中</item>
+        <item>全部订单</item>
+    </string-array>
+
+
+    <string-array name="shop_commodity_tab_array">
+        <item>在售</item>
+        <item>售完</item>
+        <item>停售</item>
+
+    </string-array>
+
+    <!--同步互动界面的设置-->
+    <string-array name="interaction_tab_array">
+        <item>历史记录</item>
+        <!--<item>通讯录</item>-->
+        <item>拨号</item>
+    </string-array>
+
+    <!--录制设置界面-->
+    <string-array name="record_set_tab_array">
+        <item>历 史 录 课</item>
+        <item>录 课 设 置</item>
+    </string-array>
+
+    <!--直播设置-->
+    <string-array name="set_left_app_menu_item_text">
+        <item>直播优化</item>
+        <item>推流地址</item>
+    </string-array>
+
+</resources>

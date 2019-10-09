@@ -8,4 +8,11 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!--自定义theme主题-->
+    <!--可以全局定义字体颜色、大小-->
+    <style name="myAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textSize">@dimen/dp_20</item>
+    </style>
+
 </resources>
