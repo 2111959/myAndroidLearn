@@ -130,6 +130,15 @@ android {
 //        javaMaxHeapSize "4g" // 增加java堆内存大小
 //    }
 
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+
+        targetCompatibility JavaVersion.VERSION_1_8
+
+    }
+
+
 }
 
 dependencies {
@@ -139,9 +148,32 @@ dependencies {
     //通过全局配置依赖库
     implementation rootProject.ext.androidDependencies.appcompat
     implementation rootProject.ext.androidDependencies.constraintlayout
-    implementation rootProject.ext.androidDependencies.junit
-    implementation rootProject.ext.androidDependencies.androidxrunner
-    implementation rootProject.ext.androidDependencies.androidxespressocore
+    testImplementation rootProject.ext.androidDependencies.junit
+    androidTestImplementation rootProject.ext.androidDependencies.androidxrunner
+    androidTestImplementation rootProject.ext.androidDependencies.androidxespressocore
 
+    implementation rootProject.ext.mvpDependencies.multidex
+    implementation rootProject.ext.mvpDependencies.design
+    implementation rootProject.ext.mvpDependencies.supportannotations
+    implementation rootProject.ext.mvpDependencies.gson
+    implementation rootProject.ext.mvpDependencies.rxjava2
+    implementation rootProject.ext.mvpDependencies.rxbinding2
+    implementation rootProject.ext.mvpDependencies.rxbinding2supportv4
+    implementation rootProject.ext.mvpDependencies.rxbinding2appcompatv7
+    implementation rootProject.ext.mvpDependencies.rxbinding2design
+    implementation rootProject.ext.mvpDependencies.rxlifecycle2
+    implementation rootProject.ext.mvpDependencies.rxlifecycle2components
+    implementation rootProject.ext.mvpDependencies.retrofit2retrofit
+    implementation rootProject.ext.mvpDependencies.okhttp3logging
+    implementation rootProject.ext.mvpDependencies.okhttp3okhttp
+    implementation rootProject.ext.mvpDependencies.retrofit2converter
+    implementation rootProject.ext.mvpDependencies.retrofit2adapter
+    implementation rootProject.ext.mvpDependencies.rxpermissions2
+    implementation rootProject.ext.mvpDependencies.barlibrary
+    implementation rootProject.ext.mvpDependencies.butterknife
+    implementation rootProject.ext.mvpDependencies.eventbus
+    implementation rootProject.ext.mvpDependencies.glide
 
+    annotationProcessor rootProject.ext.mvpDependencies.butterknifecompiler
+    annotationProcessor rootProject.ext.mvpDependencies.glidecompiler
 }

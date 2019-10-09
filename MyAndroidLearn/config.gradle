@@ -10,13 +10,22 @@ ext {
             testInstrumentationRunner: "androidx.test.runner.AndroidJUnitRunner"
     ]
 
-    //设置版本
+    //appcompatv4/v7依赖设置版本
+    appcompatv4 = '28.0.0'
+    appcompatv7 = '28.0.0'
+    //appcompatv4/v7依赖需要引用的库数组
+    appcompatvDependencies = [
+            appcompatv4: "com.android.support:appcompat-v4:${appcompatv4}",
+            appcompatv7: "com.android.support:appcompat-v4:${appcompatv7}"
+    ]
+
+    //基本依赖设置版本
     appcompatVersion = '1.1.0'
     constraintlayoutVersion = '1.1.3'
     junitVersion = '4.12'
     androidxrunnerVersion = '1.1.0-alpha4'
     androidxespressocoreVersion = '3.1.0-alpha4'
-    //需要引用的库数组
+    //基本依赖需要引用的库数组
     androidDependencies = [
             appcompat           : "androidx.appcompat:appcompat:${appcompatVersion}",
             constraintlayout    : "androidx.constraintlayout:constraintlayout:${constraintlayoutVersion}",
@@ -24,4 +33,56 @@ ext {
             androidxrunner      : "androidx.test:runner:${androidxrunnerVersion}",
             androidxespressocore: "androidx.test.espresso:espresso-core:${androidxespressocoreVersion}"
     ]
+
+    //MVP设置版本
+    multidex = '1.0.3'
+    design = '28.0.0'
+    supportannotations = '28.0.0'
+    gson = '2.8.5'
+    rxjava2 = '2.2.3'
+    rxbinding2 = '2.0.0'
+    rxbinding2supportv4 = '2.0.0'
+    rxbinding2appcompatv7 = '2.0.0'
+    rxbinding2design = '2.0.0'
+    rxlifecycle2 = '2.2.2'
+    rxlifecycle2components = '2.1.0'
+    retrofit2retrofit = '2.4.0'
+    okhttp3logging = '3.10.0'
+    okhttp3okhttp = '3.11.0'
+    retrofit2converter = '2.4.0'
+    retrofit2adapter = '2.4.0'
+    rxpermissions2 = '0.9.4@aar'
+    barlibrary = '2.3.0'
+    butterknife = '10.1.0'
+    eventbus = '3.1.1'
+    glide = '4.9.0'
+    butterknifecompiler = '10.1.0'
+    glidecompiler = '4.9.0'
+    //MVP依赖需要引用的库数组
+    mvpDependencies = [
+            multidex              : "com.android.support:multidex:${multidex}",
+            design                : "com.android.support:design:${design}",
+            supportannotations    : "com.android.support:support-annotations:${supportannotations}",
+            gson                  : "com.google.code.gson:gson:${gson}",
+            rxjava2               : "io.reactivex.rxjava2:rxjava:${rxjava2}",
+            rxbinding2            : "com.jakewharton.rxbinding2:rxbinding:${rxbinding2}",
+            rxbinding2supportv4   : "com.jakewharton.rxbinding2:rxbinding-support-v4:${rxbinding2supportv4}",
+            rxbinding2appcompatv7 : "com.jakewharton.rxbinding2:rxbinding-appcompat-v7:${rxbinding2appcompatv7}",
+            rxbinding2design      : "com.jakewharton.rxbinding2:rxbinding-design:${rxbinding2design}",
+            rxlifecycle2          : "com.trello.rxlifecycle2:rxlifecycle:${rxlifecycle2}",
+            rxlifecycle2components: "com.trello.rxlifecycle2:rxlifecycle-components:${rxlifecycle2components}",
+            retrofit2retrofit     : "com.squareup.retrofit2:retrofit:${retrofit2retrofit}",
+            okhttp3logging        : "com.squareup.okhttp3:logging-interceptor:${okhttp3logging}",
+            okhttp3okhttp         : "com.squareup.okhttp3:okhttp:${okhttp3okhttp}",
+            retrofit2converter    : "com.squareup.retrofit2:converter-gson:${retrofit2converter}",
+            retrofit2adapter      : "com.squareup.retrofit2:adapter-rxjava2:${retrofit2adapter}",
+            rxpermissions2        : "com.tbruyelle.rxpermissions2:rxpermissions:${rxpermissions2}",
+            barlibrary            : "com.gyf.barlibrary:barlibrary:${barlibrary}",
+            butterknife           : "com.jakewharton:butterknife:${butterknife}",
+            eventbus              : "org.greenrobot:eventbus:${eventbus}",
+            glide                 : "com.github.bumptech.glide:glide:${glide}",
+            butterknifecompiler   : "com.jakewharton:butterknife-compiler:${butterknifecompiler}",
+            glidecompiler         : "com.github.bumptech.glide:compiler:${glidecompiler}"
+    ]
+
 }
