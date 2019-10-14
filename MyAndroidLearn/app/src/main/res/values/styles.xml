@@ -10,9 +10,16 @@
 
     <!--自定义theme主题-->
     <!--可以全局定义字体颜色、大小-->
+    <!--解决APP启动时的白屏、黑屏的问题-->
     <style name="myAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:textColor">@color/dodgerblue</item>
         <item name="android:textSize">@dimen/dp_20</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/bg</item>
+        <item name="android:windowIsTranslucent">true</item>
     </style>
 
 </resources>

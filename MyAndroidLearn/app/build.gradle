@@ -173,7 +173,12 @@ dependencies {
     implementation rootProject.ext.mvpDependencies.butterknife
     implementation rootProject.ext.mvpDependencies.eventbus
     implementation rootProject.ext.mvpDependencies.glide
-
     annotationProcessor rootProject.ext.mvpDependencies.butterknifecompiler
     annotationProcessor rootProject.ext.mvpDependencies.glidecompiler
+
+    //leakcanary内存溢出检测，有问题的代码
+    debugImplementation rootProject.ext.leakcanaryDependencies.leakcanary
+    releaseImplementation rootProject.ext.leakcanaryDependencies.leakcanary_no_op_rel
+    testImplementation rootProject.ext.leakcanaryDependencies.leakcanary_no_op_test
+
 }

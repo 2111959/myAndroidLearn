@@ -85,4 +85,14 @@ ext {
             glidecompiler         : "com.github.bumptech.glide:compiler:${glidecompiler}"
     ]
 
+    //内存检测工具
+    leakcanary = "1.5.4"
+    //内存检测工具依赖需要引用的库数组
+    leakcanaryDependencies = [
+            leakcanary           : "com.squareup.leakcanary:leakcanary-android:${leakcanary}",
+            leakcanary_no_op_rel : "com.squareup.leakcanary:leakcanary-android-no-op:${leakcanary}",
+            leakcanary_no_op_test: "com.squareup.leakcanary:leakcanary-android-no-op:${leakcanary}"
+    ]
+
+
 }

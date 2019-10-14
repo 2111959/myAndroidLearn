@@ -50,7 +50,7 @@ public class MyUtils {
             if (msg == null) {
                 msg = "空";
             }
-            Log.d("Rich", msg);
+            Log.d("日志打印", msg);
         }
     }
 
@@ -62,18 +62,24 @@ public class MyUtils {
             if (msg == null) {
                 msg = "空";
             }
-            Log.e("Rich", msg);
+            Log.e("日志打印", msg);
         }
     }
 
     @SuppressLint("ShowToast")
-    public static void showToast(Context context, String s) {
+    public static void showToast(Context context, String text) {
+//        if (toast == null) {
+//            toast = Toast.makeText(context, "", Toast.LENGTH_LONG);
+//        }
+//        toast.setText(text);
+//        toast.show();
         if (toast == null) {
-            toast = Toast.makeText(context, "", Toast.LENGTH_LONG);
+            toast = Toast.makeText(context, text, Toast.LENGTH_SHORT);
+        } else {
+            toast.setText(text);
+            toast.setDuration(Toast.LENGTH_SHORT);
         }
-        toast.setText(s);
         toast.show();
-
     }
 
     public static void addActivity(Activity activity) {
