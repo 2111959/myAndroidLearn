@@ -1,3 +1,11 @@
 备注：以上的内容大多数非原创，她们都是基于第三方知识点整理
 v1.0.0是基本Android项目
 v2.0.0为基本的MVP项目
+
+MVP（框架）：
++Dagger2（注释）
++Retrofit（网络框架，封装okhttp）
++RxJava（异步执行）
++Obearver（观察者）
++RxLifeCahe（缓存数据）
++RxLifecycle（列表组件）

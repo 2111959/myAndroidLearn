@@ -152,6 +152,7 @@ dependencies {
     androidTestImplementation rootProject.ext.androidDependencies.androidxrunner
     androidTestImplementation rootProject.ext.androidDependencies.androidxespressocore
 
+    //mvp框架引用的库
     implementation rootProject.ext.mvpDependencies.multidex
     implementation rootProject.ext.mvpDependencies.design
     implementation rootProject.ext.mvpDependencies.supportannotations
@@ -176,7 +177,7 @@ dependencies {
     annotationProcessor rootProject.ext.mvpDependencies.butterknifecompiler
     annotationProcessor rootProject.ext.mvpDependencies.glidecompiler
 
-    //leakcanary内存溢出检测，有问题的代码
+    //leakcanary内存溢出检测，引用的库
     debugImplementation rootProject.ext.leakcanaryDependencies.leakcanary
     releaseImplementation rootProject.ext.leakcanaryDependencies.leakcanary_no_op_rel
     testImplementation rootProject.ext.leakcanaryDependencies.leakcanary_no_op_test
