@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.gd.learn.myandroidlearn.activity.TestMVPActivity;
+import com.gd.learn.myandroidlearn.test.TestRxJava;
 import com.gd.learn.myandroidlearn.utils.MyUtils;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -32,9 +33,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     public void enterMVP() {
-        MyUtils.logInformation("进入MVP项目");
-        Intent intent = new Intent(this, TestMVPActivity.class);
-        startActivity(intent);
+//        MyUtils.logInformation("进入MVP项目");
+//        Intent intent = new Intent(this, TestMVPActivity.class);
+//        startActivity(intent);
+        TestRxJava testRxJava=new TestRxJava();
+        testRxJava.test();
 //        finish();
     }
 

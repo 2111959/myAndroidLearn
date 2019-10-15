@@ -2,6 +2,8 @@ package com.gd.learn.myandroidlearn;
 
 import android.content.Context;
 
+import com.gd.learn.myandroidlearn.test.TestRxJava;
+
 import androidx.test.InstrumentationRegistry;
 import androidx.test.runner.AndroidJUnit4;
 
@@ -21,7 +23,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
-
         assertEquals("com.gd.learn.myandroidlearn", appContext.getPackageName());
     }
 }

@@ -7,6 +7,7 @@ import com.gd.learn.myandroidlearn.R;
 import com.gd.learn.myandroidlearn.implement.TestMVPModelImple;
 import com.gd.learn.myandroidlearn.model.TestMVPModel;
 import com.gd.learn.myandroidlearn.presenter.TestMVPPresenter;
+import com.gd.learn.myandroidlearn.test.TestRxJava;
 import com.gd.learn.myandroidlearn.utils.MyUtils;
 import com.gd.learn.myandroidlearn.view.TestMVPView;
 
@@ -55,6 +56,8 @@ public class TestMVPActivity extends BaseMvpActivity<TestMVPModel, TestMVPView, 
     @OnClick(R.id.enterSeekBar)
     public void enterSeekBar() {
         MyUtils.logInformation("进入seekBar界面");
+
+
     }
 
     @Override
